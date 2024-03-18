@@ -39,9 +39,9 @@ header {
     width: 100%;
 
     grid-template-rows: 3fr 1fr;
+
     align-items: center;
     justify-items: center;
-
 
     grid-column: 2 / 3;
 }
@@ -50,6 +50,37 @@ nav {
     display: grid;
     grid-auto-flow: column;
 
-    gap: 8em;
     grid-row: 2 / 3;
+
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+nav button {
+    background-color: inherit;
+    width: 10rem;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+nav button:hover {
+    background-color: #ddd;
+}
+
+nav button.active {
+    background-color: #ccc;
+}
+
+#content {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.hidden {
+    display: none;
 }

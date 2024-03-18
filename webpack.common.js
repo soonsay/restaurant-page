@@ -59,7 +59,9 @@ module.exports = {
   ],
   entry: {
     index: './src/index.js',
-    test: './src/home.js'
+    home: './src/home.js',
+    menu: './src/menu.js',
+    about: './src/about.js'
   },
   output: {
     filename: '[name].bundle.js',

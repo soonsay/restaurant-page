@@ -1,10 +1,12 @@
-export default function test() {
-    console.log('Test function success!')
-}
+function homeTest() {
+    console.log('Home function success!')
+};
+
 import Background from './icon.png'
 
-const home = document.createElement("div")
-home.setAttribute("id", "home");
+let homeTab = document.createElement("div")
+homeTab.setAttribute("id", "home");
+homeTab.classList.add('tabcontent')
+homeTab.innerText = 'HomeTab';
 
-
-const bg = new Image();
+export { homeTest, homeTab }
