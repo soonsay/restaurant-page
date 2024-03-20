@@ -7,13 +7,13 @@ import Background from './icon.png'
 let menuTab = document.createElement("div");
 menuTab.setAttribute("id", "menu");
 menuTab.classList.add('tabcontent')
-menuTab.classList.add('hidden')
-menuTab.innerText = 'menuTab';
+
 
 function createTile(item) {
     const tile = document.createElement("div");
-    let tileDiv = document.createElement("div");
+    tile.classList.add("tile");
     for (let itemProp in item) {
+        let tileDiv = document.createElement("div");
         switch(itemProp) {
             case 'name':
                 tileDiv.id = 'name'
@@ -30,7 +30,6 @@ function createTile(item) {
                 tileDiv.textContent = item[itemProp];
                 break;
         }
-        console.log(tileDiv.id);
         tile.appendChild(tileDiv);
         menuTab.appendChild(tile);
     }
@@ -47,7 +46,47 @@ const menu = [
         "name": "Burger",
         "description": "Delicious burger.",
         "price": "$8"
-    }
+    },
+    {
+        "name": "McFlurry",
+        "description": "Delicious ice cream.",
+        "price": "$5"
+    },
+    {
+        "name": "Burger",
+        "description": "Delicious burger.",
+        "price": "$8"
+    },
+    {
+        "name": "McFlurry",
+        "description": "Delicious ice cream.",
+        "price": "$5"
+    },
+    {
+        "name": "Burger",
+        "description": "Delicious burger.",
+        "price": "$8"
+    },
+    {
+        "name": "McFlurry",
+        "description": "Delicious ice cream.",
+        "price": "$5"
+    },
+    {
+        "name": "Burger",
+        "description": "Delicious burger.",
+        "price": "$8"
+    },
+    {
+        "name": "McFlurry",
+        "description": "Delicious ice cream.",
+        "price": "$5"
+    },
+    {
+        "name": "Burger",
+        "description": "Delicious burger.",
+        "price": "$8"
+    },
 ]
 
 for (let item of menu) {

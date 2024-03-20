@@ -19,6 +19,9 @@ const home = homeTab;
 const menu = menuTab;
 const about = aboutTab;
 
+menu.style.display = "none";
+about.style.display = "none";
+
 const content = document.getElementById('content');
 
 const myLogo = new Image();
@@ -48,7 +51,12 @@ function openTab(event, tabName) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    document.getElementById(lowerTabName).style.display = "block";
+    if (lowerTabName == 'menu'){
+        document.getElementById(lowerTabName).style.display = "grid";
+    } else {
+        document.getElementById(lowerTabName).style.display = "block";
+    }
+
     event.currentTarget.className += " active";
 }
 

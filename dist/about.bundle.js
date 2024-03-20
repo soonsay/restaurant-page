@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrestaurant_page=self.webpackChunkrestaurant_page||[]).push([[594],{213:(e,t,a)=>{a.d(t,{D:()=>s}),a(876);let s=document.createElement("div");s.setAttribute("id","about"),s.classList.add("tabcontent"),s.innerText="aboutTab"},876:(e,t,a)=>{e.exports=a.p+"33781d746b9edc49a879.png"}},e=>{e(e.s=213)}]);
