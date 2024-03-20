@@ -2,13 +2,15 @@ import { homeTest, homeTab } from './home.js';
 import { menuTest, menuTab } from './menu.js';
 import { aboutTest, aboutTab } from './about.js';
 import './style.css';
-import Icon from './icon.png';
+import Logo from './CafeLogo.jpg'
 
-homeTest();
-menuTest();
-aboutTest();
+// homeTest();
+// menuTest();
+// aboutTest();
 
 const body = document.body;
+const header = document.getElementById('navHeader')
+
 
 const container = document.getElementById('container');
 container.classList.add("containerGrid");
@@ -18,6 +20,11 @@ const menu = menuTab;
 const about = aboutTab;
 
 const content = document.getElementById('content');
+
+const myLogo = new Image();
+myLogo.src = Logo;
+myLogo.classList.add('logo')
+header.appendChild(myLogo);
 
 
 
@@ -46,8 +53,8 @@ function openTab(event, tabName) {
 }
 
 const nav = document.getElementById('tabs');
-const tabs = nav.children;
-for (let tab of tabs) {
+const tablinks = nav.children;
+for (let tab of tablinks) {
     tab.classList.add('tablinks');
     tab.addEventListener("click", (e) => {
         openTab(e, e.target.innerText);
