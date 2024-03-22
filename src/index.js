@@ -2,7 +2,7 @@ import { homeTest, homeTab } from './home.js';
 import { menuTest, menuTab } from './menu.js';
 import { aboutTest, aboutTab } from './about.js';
 import './style.css';
-import Logo from './CafeLogo.jpg'
+import Logo from '../img/CafeLogo.jpg'
 
 // homeTest();
 // menuTest();
