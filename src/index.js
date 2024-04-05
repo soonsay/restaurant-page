@@ -3,6 +3,7 @@ import { menuTest, menuTab } from './menu.js';
 import { aboutTest, aboutTab } from './about.js';
 import './style.css';
 import Logo from '../img/CafeLogo.jpg'
+import Background from '../img/background-pattern.png'
 
 // homeTest();
 // menuTest();
@@ -10,6 +11,8 @@ import Logo from '../img/CafeLogo.jpg'
 
 const body = document.body;
 const header = document.getElementById('navHeader')
+const footer = document.getElementById('footer');
+footer.innerText = 'Copyright © github.com/soonsay';
 
 
 const container = document.getElementById('container');
@@ -28,7 +31,6 @@ const myLogo = new Image();
 myLogo.src = Logo;
 myLogo.classList.add('logo')
 header.appendChild(myLogo);
-
 
 
 content.appendChild(homeTab);
