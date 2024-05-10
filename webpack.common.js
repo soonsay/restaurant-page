@@ -53,6 +53,7 @@ module.exports = {
       title: 'Development',
       file: 'index.html',
       inject: 'body',
+      favicon: "./img/icons8-coffee-cup-16.png"
       // scriptLoading: 'defer',
     
     })
