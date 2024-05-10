@@ -2,7 +2,7 @@ import { homeTest, homeTab } from './home.js';
 import { menuTest, menuTab } from './menu.js';
 import { aboutTest, aboutTab } from './about.js';
 import './style.css';
-import Logo from '../img/CafeLogo.jpg'
+import Logo from '../img/CafeLogo2.png'
 import Background from '../img/background-pattern.png'
 
 // homeTest();
@@ -21,6 +21,7 @@ container.classList.add("containerGrid");
 const home = homeTab;
 const menu = menuTab;
 const about = aboutTab;
+
 
 menu.style.display = "none";
 about.style.display = "none";
@@ -53,7 +54,7 @@ function openTab(event, tabName) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    if (lowerTabName == 'menu'){
+    if (lowerTabName == 'menu' || lowerTabName == 'about'){
         document.getElementById(lowerTabName).style.display = "grid";
     } else {
         document.getElementById(lowerTabName).style.display = "block";
