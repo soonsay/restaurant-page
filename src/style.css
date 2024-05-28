@@ -124,7 +124,6 @@ nav button.active {
     background-color: rgba(255, 255, 255, 0.96);
 
     background-blend-mode: lighten;
-
     box-shadow: -0.5rem gray;
 }
 
